@@ -5,10 +5,10 @@
 % assignment #3
 % description: This program creates the flanging audio effect in MATLAB. It creates a single delay
 % with the delay time ocilating from either 0-3 ms or 0-15 ms at 0.1 - 5 Hz. Input for this 
-% program is a PCM formatted file is generated using audacity export function and saving file in 
+% program is a PCM formatted file generated using audacity export function and saving file in 
 % uncompressed, header less, 16bits PCM. Output of this program is a Flanged wave file (out_flanger.wav)
 % along withseveral graphs displaying original wave form, flanged wave form, Fourier tranformation of  
-% original and flanged signal. Output also consists of the original wave 'original.wav' generated from  
+% original and flanged signal. Output also consists of the audio wav 'original.wav' generated from  
 % raw PCM file and finally generated the 'out_flanger.raw' as a raw file of generated flanged wave.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
