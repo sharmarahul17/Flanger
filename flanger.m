@@ -48,12 +48,14 @@ plot(x, 'm');
 xlabel('Time');
 ylabel('Amplitude');
 title('Original Signal');
+legend('Original Signal');
 
 figure(2)
 plot(y, 'b');
 xlabel('Time');
 ylabel('Amplitude');
 title('Flanged Signal');
+legend('Flanged Signal');
 
 figure(3) % Ploting both Flanged and Original Signal together
 hold on 
