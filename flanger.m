@@ -20,7 +20,7 @@ data = fread(fid_R,'int32'); % Raw data of input audio file.
 fclose(fid_R);
 data=int32(data);
 infile = 'original.wav';
-audiowrite(infile,data,fs,'BitsPerSample',32); % outputfile is normalized in apmlitude
+audiowrite(infile,data,fs,'BitsPerSample',32); % outputfile is normalized in amplitude
 
 
 %-------------------------------  IMPLEMENT FLANGING EFFECT  -------------------------------------------
@@ -45,13 +45,13 @@ end
 %-------------------------------  PLOTTING GRAPHS  ----------------------------------------------------
 figure(1)
 plot(x, 'm');
-xlabel('Samples');
+xlabel('Time');
 ylabel('Amplitude');
 title('Original Signal');
 
 figure(2)
 plot(y, 'b');
-xlabel('Samples');
+xlabel('Time');
 ylabel('Amplitude');
 title('Flanged Signal');
 
@@ -59,9 +59,10 @@ figure(3) % Ploting both Flanged and Original Signal together
 hold on 
 plot(x, 'm');
 plot(y, 'b');
-xlabel('Samples');
+xlabel('Time');
 ylabel('Amplitude');
 title('Flanged and Original Signal');
+legend('Original Signal','Flanged Signal');
 
 figure(4)
 hold on
@@ -73,6 +74,7 @@ plot(f2, abs(fft(y)),'b');
 xlabel('Frequency');
 ylabel('Amplitude');
 title('Magnitude');
+legend('Original Signal','Flanged Signal');
 
 %-------------------------------  GENERATED OUTPUT  ------------------------------------------------
 
